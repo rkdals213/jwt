@@ -22,8 +22,6 @@ public class HttpSupport {
     }
 
     public static void removeCookie(Cookie cookie, HttpServletResponse res) {
-        System.out.println(cookie.getValue());
-
         Cookie removed = new CookieConfig()
                 .name(cookie.getName()).value("").expires(10)
                 .secure(cookie.getSecure())

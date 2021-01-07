@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -35,7 +33,6 @@ public class SessionController {
                 payload -> {
                     payload.setExp(token.getExpiration());
                     payload.addClaim("info", profile);
-                    System.out.println(payload.getClaims());
                 });
 
         Cookie jwtCookie = HttpSupport.createCookie(conf -> conf
