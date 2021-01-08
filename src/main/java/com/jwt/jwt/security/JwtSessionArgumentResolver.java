@@ -1,7 +1,7 @@
 package com.jwt.jwt.security;
 
 import com.jayway.jsonpath.JsonPath;
-import com.jwt.jwt.HttpSupport;
+import com.jwt.jwt.support.HttpSupport;
 import com.jwt.jwt.exceptions.AuthenticationException;
 import org.springframework.core.MethodParameter;
 import org.springframework.web.bind.support.WebDataBinderFactory;

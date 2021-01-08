@@ -1,6 +1,6 @@
 package com.jwt.jwt.security;
 
-import com.jwt.jwt.HttpSupport;
+import com.jwt.jwt.support.HttpSupport;
 import com.jwt.jwt.exceptions.AuthenticationException;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;

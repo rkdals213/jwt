@@ -1,6 +1,6 @@
-package com.jwt.jwt.session;
+package com.jwt.jwt.controller;
 
-import com.jwt.jwt.HttpSupport;
+import com.jwt.jwt.support.HttpSupport;
 import com.jwt.jwt.security.Authenticated;
 import com.jwt.jwt.security.ConsoleJwtService;
 import com.jwt.jwt.security.JwtClaim;

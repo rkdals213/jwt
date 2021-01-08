@@ -1,4 +1,4 @@
-package com.jwt.jwt;
+package com.jwt.jwt.support;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;

@@ -1,4 +1,4 @@
-package com.jwt.jwt;
+package com.jwt.jwt.support;
 
 import com.jwt.jwt.security.JwtInterceptor;
 import com.jwt.jwt.security.JwtService;
