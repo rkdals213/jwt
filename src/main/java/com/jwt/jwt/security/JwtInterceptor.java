@@ -34,7 +34,7 @@ public class JwtInterceptor implements HandlerInterceptor {
         Optional<String> cookie = HttpSupport.getCookie(request, COOKIE_KEY).map(Cookie::getValue);
 
         return Stream.concat(header.stream(), cookie.stream())
-                .map(token -> jwtService.isUsable(token))
+                .map(jwtService::isUsable)
                 .filter(check -> check)
                 .findFirst()
                 .orElseThrow(() -> new AuthenticationException("Unauthorized access. need to authentication"));

@@ -28,7 +28,7 @@ public class SessionController {
                 "id", input.get("id"),
                 "pw", input.get("pw")
         );
-        OAuthClient.Token token = oauthClient.exchangeToken();
+        OAuthClient.Token token = oauthClient.createToken();
         String jwt = jwtService.create(
                 payload -> {
                     payload.setExp(token.getExpiration());

@@ -18,7 +18,7 @@ public class OAuthClient {
         private ZonedDateTime expiration;
     }
 
-    public Token exchangeToken() {
+    public Token createToken() {
         try {
             Token token = new Token();
             long now = Instant.now().getEpochSecond();
