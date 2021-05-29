@@ -37,6 +37,7 @@ public class JwtSessionArgumentResolver implements HandlerMethodArgumentResolver
         JwtClaim annotation = parameter.getParameterAnnotation(JwtClaim.class);
         Class<?> paramType = parameter.getParameterType();
         String path = String.format("$.%s", annotation.value());
+        System.out.println(path);
 
         HttpServletRequest request = webRequest.getNativeRequest(HttpServletRequest.class);
 

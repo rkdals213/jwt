@@ -20,8 +20,8 @@ import java.util.function.Consumer;
 
 @Component
 public class ConsoleJwtService implements JwtService {
-    private final static byte[] JWT_KEY_SALT = "dlsdjrywngowjreks".getBytes(StandardCharsets.UTF_8);
-    private final static byte[] JWT_KEY = "dndbsmschzhdndbrkchlrhdi".getBytes(StandardCharsets.UTF_8);
+    private final static byte[] JWT_KEY_SALT = "qlalfxhzmsthrma".getBytes(StandardCharsets.UTF_8);
+    private final static byte[] JWT_KEY = "qlalfxhzms".getBytes(StandardCharsets.UTF_8);
 
     private final ObjectMapper jsonMapper = new ObjectMapper();
     private final Logger log = LoggerFactory.getLogger(ConsoleJwtService.class);
